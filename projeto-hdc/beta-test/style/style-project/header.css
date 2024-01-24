@@ -1,0 +1,129 @@
+.header{
+    background-color: #323131;
+    padding: 25px 20px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+.logo-hdc{
+    position: relative;
+
+    width: 50px;
+    height: 50px;
+    background-image: url(../../img/hdchostlogo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    margin-right: 20px;
+}
+
+nav a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* menu */
+
+nav .menu-faketrigger{
+    visibility: hidden;
+}
+
+@media (max-width: 576px){
+    nav{
+        position: relative;
+    }
+    
+    .header nav ul{
+        display: none;
+    }
+    
+    nav .menu-faketrigger{
+        position: absolute;
+
+        top: -30px;
+        left: -35px;
+
+        z-index: 1000;
+        width: 35px;
+        height: 35px;
+        opacity: 0;
+
+        visibility: visible;
+    }
+    
+    nav .menu-lines{
+        position: absolute;
+
+        top: -30px;
+        left: -35px;
+
+        z-index: 999;
+        width: 35px;
+        height: 35px;
+    }
+    
+    nav .menu-lines span{
+        display: inline-block;
+        width: 35px;
+        height: 5px;
+        margin-bottom: 15px;
+        background-color: #CDCDCD;
+        border-radius: 3px;
+    }
+
+    nav .menu-faketrigger:checked~ul{
+        position: absolute;
+        top: 40px;
+        left: -155px;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+
+        height: 100vh;
+        margin-top: -95px;
+        padding: 100px 15px 0px 70px;
+        
+        background-color: #CDCDCD4F;
+        transition: all ease 2s;
+    }
+
+    nav .menu-faketrigger:checked~ul li{
+        padding-bottom: 35px; 
+        z-index: 1;
+        transition: all ease 0.2s;
+    }
+
+    nav .menu-faketrigger:checked~ul li .default-btn{
+        color: #FFF;
+        background-color: #1CC227;
+    }
+
+    nav .menu-faketrigger:checked~.menu-lines span:nth-child(1){
+        transform-origin: -5% 0%;
+        transform: rotate(45deg) scaleX(1.65);
+        transition: all ease .2s;
+    }
+    
+    nav .menu-faketrigger:checked ~ .menu-lines span:nth-child(2){
+        opacity: 0;
+    }
+    
+    nav .menu-faketrigger:checked ~ .menu-lines span:nth-child(3){
+        transform-origin: 0% 100%;
+        transform: rotate(-45deg) scaleX(1.65);
+        transition: all ease .2s;
+    }
+}
+

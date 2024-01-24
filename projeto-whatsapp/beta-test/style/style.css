@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+/* user-area */
+
+.sidebar{
+    position: fixed;
+
+    width: 350px;
+    height: 100vh;
+    background-color: #FFF;
+}
+
+.user-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 15px;
+    background-color: #F2F0F0;
+}
+
+.user-photo-circle{
+    background-color: #CDCDCD;
+    border-radius: 50% 50%;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    position: relative;
+}
+
+.user-photo{
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    bottom: 0;
+
+    background-image: url(../img/avatar1.png);
+    background-position: center;    
+    background-size: cover;
+    cursor: pointer;
+}
+
+.user-area-icons ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.user-area-icons #pointer-icon-id, .user-area-icons #message-icon-id, .user-area-icons #elipse-icon-id{
+    fill: #808080;
+    cursor: pointer;
+}
+
+.user-area-icons #pointer-icon-id, .user-area-icons #message-icon-id{
+    padding-right: 30px;
+}
+
+.user-area-icons #elipse-icon-id{
+    padding-right: 15px;
+}
+
+/* notice-area */
+
+.notice-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 25px 20px 10px;
+    background-color: #C3E4F8;
+    cursor: pointer;
+}
+
+.notification-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFF;
+    overflow: hidden;
+    position: relative;
+}
+
+.notification-icon .bell-icon{
+    position: absolute;
+    top: 16px;
+    left: 0px;
+
+    fill: #C3E4F8;
+    width: 100%;
+    bottom: 0;
+}
+
+.notification-text ul{
+    list-style: none;
+    font-size: 14px;
+    color: #808080;
+}
+
+#notification-text-small, .notification-text .chevron-icon{
+    padding-top: 3px;
+    font-size: 12px;
+}
+
+.notification-text .chevron-icon{
+    width: 5px;
+    height: 13px;
+}
+
+/* search-area */
+
+.search-area{
+    background-color: #F2F0F0;
+}
+
+.search-area-container{
+    padding: 5px 15px;
+}
+
+.search-area-container ul{
+    display: flex;
+    align-items: center;
+
+    padding: 10px 15px;
+    list-style: none;
+    border-radius: 50px;
+    background-color: #FFF;
+
+    color: #808080;
+    font-size: 10px;
+}
+
+.search-area-container .magglasses-icon{
+    fill: #808080;
+    height: 10px;
+    margin-right: 15px;
+
+    cursor: pointer;
+}
+
+.search-area-container input[type=text]{
+    border: none;
+    width: 245px;
+}
+
+.search-area-container input[type=text]::placeholder{
+    font-size: 12px;
+}
+
+
+/* contact-area */
+
+
+.contact-area-container ul{
+    list-style: none;
+}
+
+.contact-area-container ul li{
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+}
+
+.contact-area-container ul li .data-message{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-area {
+    width: 100%;
+    border: 1px solid #8080801A;
+}
+
+.contact-area-checked{
+    background-color: #BDCCA252;
+    border: none;
+}
+
+.sabrina-matos-user{
+    background-image: url(../img/avatar2.png);
+}
+
+.contact-area-container .contact-area .chat-area{
+    padding-left: 10px;
+}
+
+.contact-area-container .contact-area .chat-area .contact-name{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.contact-area-container .contact-area .chat-area .chat-area-message{
+    font-size: 12px;
+}
+
+.contact-area-container .contact-area .chat-area .chat-area-message svg{
+    width: 10px;
+    height: 10px;
+    fill: #107ADE;
+}
+
+.contact-area-container .contact-area .date-message .hour{
+    color: #808080;
+    font-size: 10px;
+}
+
+#joao-augusto-user{
+    background-image: url(../img/avatar3.png);
+}
+
+.contact-area-container .contact-area .date-message .chat-area-notification-circle{
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #2ace25;
+}
+
+.contact-area-container .contact-area .date-message .chat-area-notification-circle p{
+    position: absolute;
+    top: 2px;
+    left: 4px;
+
+    color: #FFF;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.contact-area-container .contact-area #maria-silva-user{
+    background-image: url(../img/avatar4.png);
+}
+
+#sabrina-matos-contact, #joao-augusto-contact, #maria-silva-contact, .sabrina-matos-user, #joao-augusto-user, #maria-silva-user{
+    cursor: pointer;
+}
+
+
+/* message tab */
+
+
+.content{
+    position: absolute;
+    left: 350px;
+
+    height: 100vh;
+    width: calc(100% - 350px);
+    
+    overflow: hidden;
+    background-image: url(../img/background-whatsapp-default.png);
+}
+
+.content .content-header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 55px;
+    border-left: 1px solid #80808045;
+    background-color: #F2F0F0;
+}
+
+.content-header .user-contact-actual{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.content-header .user-contact-actual p{
+    padding-left: 10px;
+}
+
+.content-header .component-contact-actual ul{
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+}
+
+.content-header .component-contact-actual ul li{
+    padding-right: 25px;
+}
+
+.content .content-main{
+    width: 100%;
+    height: calc(100% - 120px);
+}
+
+.content-main .main-background-image{
+    position: relative;
+}
+
+.remetent-message, .sender-message{
+    position: absolute;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px 80px 5px 5px;
+}
+
+.remetent-message{
+    top: 330px;
+    left: 35px;
+
+    background-color: #FFF;
+}
+
+.sender-message{
+    top: 435px;
+    left: 675px;
+
+    background-color: #BCFFAA;
+}
+
+
+
+/* [...] */
+
+
+
+.content .content-message{
+    padding-top: 16px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    width: 100%;
+    height: 100%;
+    background-color: #F2F0F0;
+}
+
+.content-message .content-message-container{
+    width: 100%;
+    height: 100%;
+}
+
+.content-message .content-message-container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+}
+
+.content-message-container ul li input[type=text]{
+    width: 780px;
+    padding: 10px 14px;
+    border-style: none;
+    border-radius: 20px;
+}
+
+.content-message-container ul li svg{
+    width: 20px;
+    height: 20px;
+    fill: #808080;
+    cursor: pointer;
+}

@@ -1,0 +1,305 @@
+/* default */
+
+html{
+    font-family: 'Open sans', sans-serif;
+    color: #373A3C;
+}
+
+a{
+    transition: .5s;
+}
+
+/* sidebar */
+
+#sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+
+    padding-top: 40px;
+    background-color: #006599;
+}
+
+#sidebar h1{
+    text-align: center;
+    font-size: 32px;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #FFF;
+}
+
+#sidebar a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFF;
+}
+
+#sidebar a:hover{
+    color: #F4EF5E;
+}
+
+#sidebar li{
+    padding: 20px;
+}
+
+.sidebar-container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.logo-doceria{
+    display: block;
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 60px;
+    height: 60px;
+}
+
+/* content */
+
+.content{
+    position: absolute;
+    left: 300px;
+    width: calc(100% - 300px);
+}
+
+.content h1, .content h2{
+    color: #006599;
+    margin-bottom: 30px;
+}
+
+.content h1{
+    font-size: 48px;
+}
+
+.content h2{
+    font-size: 35px;
+}
+
+section{
+    padding-left: 50px;
+}
+
+/* welcome section */
+
+#welcome-session{
+    padding-left: 0;
+}
+
+.welcome-session-content{
+    padding-left: 50px;
+}
+
+#welcome-session .banner{
+    height: 500px;
+    background-image: url(../img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#welcome-session h1{
+    margin-top: 70px;
+}
+
+#welcome-session::after, #aboutus-session::after{   /* quebra de linha em css */
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 100px;
+}
+
+.minibanner-session{
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+
+.description-session{
+    position: absolute;
+    left: 370px;
+    padding-right: 30px;
+}
+
+.description-session p{
+    line-height: 2;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+
+.welcome-session-btn, input[type=submit]{
+    background-color: #006599;
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 25px;
+    padding: 20px 40px;
+    transition: .5s;
+    display: block;
+    width: 100px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.welcome-session-btn:hover, input[type=submit]:hover{
+    background-color: #2790C6;
+}
+
+/* about us session */
+
+#aboutus-session .minibanner-session{
+    float: right;
+    margin-right: 25px;
+    background-image: url(../img/banner4.jpg);
+}
+
+#aboutus-session .description-session{
+    position: absolute;
+    left: 25px;
+    width: calc(100% - 400px);
+}
+
+/* candy 1 session */
+
+#candy1-session, #candy2-session, #candy3-session{
+    /*padding-right: 50px;*/
+    margin-bottom: 50px;
+}
+
+.banner-galery{
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: 200px;
+}
+
+.candy1-img{
+    width: 18.2%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#candy1-img1{
+    background-image: url(../img/galeria1.jpg);
+    margin-left: 0;
+}
+
+#candy1-img2{
+    background-image: url(../img/galeria2.jpg);
+}
+
+#candy1-img3{
+    background-image: url(../img/galeria3.jpg);
+}
+
+#candy1-img4{
+    background-image: url(../img/galeria4.jpg);
+}
+
+#candy1-img5{
+    background-image: url(../img/galeria5.jpg);
+    margin-right: 0;
+}
+
+/* candy 2 session */
+
+.candy2-img{
+    width: 32%;
+    margin-left: .5s;
+    margin-right: .5s;
+}
+
+#candy2-img1{
+    background-image: url(../img/galeria6.jpg);
+    margin-left: 0;
+}
+
+#candy2-img2{
+    background-image: url(../img/galeria7.jpg);
+}
+
+#candy2-img3{
+    background-image: url(../img/galeria8.jpg);
+    margin-right: 0;
+}
+
+/* candy 3 session */
+
+.candy3-img{
+    width: 22.9%;
+    margin-left: .5%;
+    margin-right: .5%;
+    border: 1px solid black;
+}
+
+#candy3-img1{
+    background-image: url(../img/galeria9.jpg);
+    margin-left: 0;
+}
+
+#candy3-img2{
+    background-image: url(../img/galeria10.jpg);
+}
+
+#candy3-img3{
+    background-image: url(../img/galeria11.jpg);
+}
+
+#candy3-img4{
+    background-image: url(../img/galeria12.jpg);
+    margin-right: 0;
+}
+
+/* contact-session */
+
+#contact-session{
+    width: 500px;
+}
+
+#contact-session input[type=text], #contact-session input[type=email], #contact-session textarea{
+    display: block;
+    border: 1px solid #006599;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Open sans', sans-serif;
+}
+
+#contact-session input[type=text]:focus, #contact-session input[type=email]:focus, #contact-session textarea:focus{
+    border-color: #2790C6;
+}
+
+#contact-session textarea{
+    height: 150px;
+}
+
+#contact-session ::placeholder{
+    color: #2790C6;
+}
+
+#contact-session input[type=submit]{
+    margin-left: 0;
+    font-size: 16px;
+    width: 180px;
+}
+
+footer {
+    height: 100px;
+    padding-top: 150px;
+    color: #006599;
+}
+
+footer p{
+    text-align: center;
+    font-weight: bold;
+}

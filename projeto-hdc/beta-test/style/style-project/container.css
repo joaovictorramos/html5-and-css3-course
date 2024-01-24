@@ -1,0 +1,42 @@
+#container{
+    font-family: 'Open sans', Arial, sans-serif;
+}
+
+.default-btn{
+    padding: 10px 20px;
+    border-radius: 5px 5px;
+    background-color: #1CC227;
+    cursor: pointer;
+    border: none;
+}
+
+.default-h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+@media (max-width: 576px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .header-container nav{
+        margin-top: 10px;
+    }
+
+    #component-session .component-security, #component-session .component-speed, #component-session .component-suport{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #component-session .component-message{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+
+        max-width: 100%;
+        width: 100%;
+    }
+}
